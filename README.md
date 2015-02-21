@@ -2,6 +2,8 @@ HTML Explorer Thumbnails
 =====================================================================
 (c) copyright Andreas Verhoeven, 2008 |ave@aveapps.com
 
+![screenshot](http://www.aveapps.com/img/html_thumbnail.png)
+
 # DESCRIPTION
 This little addon enables thumbnails for HTML, HTM, MHTML and URL files in Windows Explorer, a feature
 which has been removed from Vista.
