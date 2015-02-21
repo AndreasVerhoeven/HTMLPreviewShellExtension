@@ -1,0 +1,27 @@
+HKCR
+{
+	HTMLPreviewShellExt.HTMLExtractImage.1 = s 'HTMLExtractImage Class'
+	{
+		CLSID = s '{FBA93C8D-18D4-47E4-B954-B1E4F870F222}'
+	}
+	HTMLPreviewShellExt.HTMLExtractImage = s 'HTMLExtractImage Class'
+	{
+		CLSID = s '{FBA93C8D-18D4-47E4-B954-B1E4F870F222}'
+		CurVer = s 'HTMLPreviewShellExt.HTMLExtractImage.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {FBA93C8D-18D4-47E4-B954-B1E4F870F222} = s 'HTMLExtractImage Class'
+		{
+			ProgID = s 'HTMLPreviewShellExt.HTMLExtractImage.1'
+			VersionIndependentProgID = s 'HTMLPreviewShellExt.HTMLExtractImage'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{2CF6B7D9-46F4-472E-A61F-7BC5B38E27C5}'
+		}
+	}
+}

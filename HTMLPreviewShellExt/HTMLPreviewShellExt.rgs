@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'HTMLPreviewShellExt'
+		'HTMLPreviewShellExt.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

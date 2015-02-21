@@ -1,0 +1,75 @@
+HKCR
+{
+	HTMLPreviewShellExt.HTMLExtractImage2.1 = s 'HTMLExtractImage2 Class'
+	{
+		CLSID = s '{28AC834E-D791-4E37-BEEE-C1739AE9F5EE}'
+	}
+	HTMLPreviewShellExt.HTMLExtractImage2 = s 'HTMLExtractImage2 Class'
+	{
+		CLSID = s '{28AC834E-D791-4E37-BEEE-C1739AE9F5EE}'
+		CurVer = s 'HTMLPreviewShellExt.HTMLExtractImage2.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {28AC834E-D791-4E37-BEEE-C1739AE9F5EE} = s 'HTMLExtractImage2 Class'
+		{
+			ProgID = s 'HTMLPreviewShellExt.HTMLExtractImage2.1'
+			VersionIndependentProgID = s 'HTMLPreviewShellExt.HTMLExtractImage2'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{2CF6B7D9-46F4-472E-A61F-7BC5B38E27C5}'
+		}
+	}
+
+	NoRemove .html
+	{
+		shellex
+		{
+			{BB2E617C-0920-11d1-9A0B-00C04FC2D6C1} = s '{28AC834E-D791-4E37-BEEE-C1739AE9F5EE}'
+		}
+	}
+	
+	NoRemove .htm
+	{
+		shellex
+		{
+			{BB2E617C-0920-11d1-9A0B-00C04FC2D6C1} = s '{28AC834E-D791-4E37-BEEE-C1739AE9F5EE}'
+		}
+	}
+	
+	NoRemove .mht
+	{
+		shellex
+		{
+			{BB2E617C-0920-11d1-9A0B-00C04FC2D6C1} = s '{28AC834E-D791-4E37-BEEE-C1739AE9F5EE}'
+		}
+	}
+	
+	NoRemove mhtmlfile
+	{
+		shellex
+		{
+			{BB2E617C-0920-11d1-9A0B-00C04FC2D6C1} = s '{28AC834E-D791-4E37-BEEE-C1739AE9F5EE}'
+		}
+	}
+	
+	NoRemove .mhtml
+	{
+		shellex
+		{
+			{BB2E617C-0920-11d1-9A0B-00C04FC2D6C1} = s '{28AC834E-D791-4E37-BEEE-C1739AE9F5EE}'
+		}
+	}
+	
+	NoRemove .url
+	{
+		shellex
+		{
+			{BB2E617C-0920-11d1-9A0B-00C04FC2D6C1} = s '{28AC834E-D791-4E37-BEEE-C1739AE9F5EE}'
+		}
+	}
+	
+}

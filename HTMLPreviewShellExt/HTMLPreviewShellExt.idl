@@ -1,0 +1,34 @@
+// HTMLPreviewShellExt.idl : IDL source for HTMLPreviewShellExt
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (HTMLPreviewShellExt.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(691EFBA0-45A1-4389-8A50-2BEABB48DD40),
+	helpstring("IHTMLExtractImage2 Interface"),
+	pointer_default(unique)
+]
+interface IHTMLExtractImage2 : IUnknown{
+};
+[
+	uuid(2CF6B7D9-46F4-472E-A61F-7BC5B38E27C5),
+	version(1.0),
+	helpstring("HTMLPreviewShellExt 1.0 Type Library")
+]
+library HTMLPreviewShellExtLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(28AC834E-D791-4E37-BEEE-C1739AE9F5EE),
+		helpstring("HTMLExtractImage2 Class")
+	]
+	coclass HTMLExtractImage2
+	{
+		[default] interface IHTMLExtractImage2;
+	};
+};
